@@ -11,10 +11,8 @@ export function renderImages(images) {
 function createImageCard({ webformatURL, largeImageURL, tags, likes, views, comments, downloads }) {
   return `
   <div class="container">
-  <div class="photo">
     <a href="${largeImageURL}" class="gallery-item">
       <img src="${webformatURL}" alt="${tags}" loading="lazy" />
-      </div>
       <div class="info">
         <p class="subtitle"><b>Likes</b> ${likes}</p>
         <p class="subtitle"><b>Views</b> ${views}</p>
